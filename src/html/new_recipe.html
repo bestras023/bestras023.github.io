@@ -1,0 +1,45 @@
+<ons-page id="newRecipePage">
+    <ons-toolbar>
+        <div class="left">
+            <div id="div-new-recipe"></div>
+            <ons-back-button>Recipes</ons-back-button>
+        </div>
+        <div class="center">New Recipe</div>
+        <div class="right" id="enable-notification-div">
+            <ons-button id="enable-notification-btn">Enable notifications</ons-button>
+        </div>
+    </ons-toolbar>
+
+    <ons-list-title>Add a new recipe</ons-list-title>
+    <ons-list>
+        <ons-list-item modifier="nodivider">
+            <div class="center">
+                <ons-input id="recipe-title" type="text" placeholder="Title" float></ons-input>
+            </div>
+        </ons-list-item>
+        <ons-list-item modifier="nodivider">
+            <div class="center">
+                <ons-input id="recipe-category" type="text" placeholder="Category" float></ons-input>
+            </div>
+        </ons-list-item>
+        <ons-list-item modifier="nodivider">
+            <div class="center">
+                <ons-input id="recipe-area" type="text" placeholder="Area" float></ons-input>
+            </div>
+        </ons-list-item>
+        <ons-list-item modifier="nodivider">
+            <div class="center">
+                <ons-input id="recipe-tags" type="text" placeholder="Tags" float></ons-input>
+            </div>
+        </ons-list-item>
+        <ons-list-item modifier="nodivider">
+            <div class="center">
+                <ons-input id="recipe-instructions" type="text" placeholder="Instructions" float></ons-input>
+            </div>
+        </ons-list-item>
+    </ons-list>
+
+    <ons-if platform="ios other">
+        <ons-button modifier="large" component="button/save-task">Add New Task</ons-button>
+    </ons-if>
+</ons-page>

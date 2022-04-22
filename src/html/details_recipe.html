@@ -1,0 +1,46 @@
+<ons-page id="detailsRecipePage">
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+        <div class="center">Recipe Details</div>
+        <div class="right" id="wake-lock-div"></div>
+    </ons-toolbar>
+
+    <ons-list>
+        <ons-list-item modifier="nodivider">
+            <ons-if platform="ios other" class="left left-label">
+                Title
+            </ons-if>
+            <div id="recipe-title"></div>
+        </ons-list-item>
+        <ons-list-item modifier="nodivider">
+            <ons-if platform="ios other" class="left left-label">
+                Category
+            </ons-if>
+            <div id="recipe-category"></div>
+        </ons-list-item>
+        <ons-list-item modifier="nodivider">
+            <ons-if platform="ios other" class="left left-label">
+                Area
+            </ons-if>
+            <div id="recipe-area"></div>
+        </ons-list-item>
+        <ons-list-item modifier="nodivider">
+            <ons-if platform="ios other" class="left left-label">
+                Tags
+            </ons-if>
+            <div id="recipe-tags"></div>
+        </ons-list-item>
+        <ons-list-item modifier="nodivider">
+            <ons-if platform="ios other" class="left left-label">
+                Description
+            </ons-if>
+            <div id="recipe-instructions"></div>
+        </ons-list-item>
+    </ons-list>
+    <br>
+    <div class="text-center">
+        <ons-button id="share-btn">Share</ons-button>
+    </div>
+</ons-page>
